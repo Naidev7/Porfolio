@@ -1,0 +1,29 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+import { ViewTransitions } from "astro:transitions";
+import favIcon from "../assets/1.png";
+import "../assets/style.css"
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href={favIcon.src} class="rounded-md"/>
+    <meta name="generator" content={Astro.generator} />
+	<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <title>{title}</title>
+    <ViewTransitions />
+  </head>
+  <body class="bg-black text-white">
+    <slot />
+    <script src="../assets/index.js"></script>
+  </body>
+</html>

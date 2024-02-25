@@ -1,0 +1,29 @@
+---
+import { Image } from "astro:assets";
+import image2 from "../assets/image2.jpg";
+---
+
+<section
+  id="about"
+  class="mx-auto flex justify-evenly mb-8 scroll-mt-36 lg:w-[70%] lg:flex-row lg:px-10 sm:w-[60%] xs:w-full xs:flex-col-reverse xs:px-0"
+>
+  <Image
+    src={image2}
+    alt="#"
+    class="object-cover mx-auto rounded-lg lg:w-[40%] lg:h-52 sm:h-52 xs:w-[90%] xs:ml-5 xs:h-[150px]"
+  />
+  <div
+    class="flex flex-col justify-center gap-y-6 text-center lg:w-[50%] lg:mx-0 mb-4 xs:w-[80%] xs:mb-6 xs:mx-auto"
+  >
+    <h2 class="font-black lg:text-[50px] xs:text-6xl">
+      Hey I'm <span
+        class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 from-30% to-orange-500 via-70% xl:inline xs:block"
+        >Naidaly Ruiz</span>
+    </h2>
+    <p class="opacity-60 text-[17px]">
+      <span>Junior Full Stack Developer</span>
+      <span>My hobbies are programming in React.js or Node.js</span>
+      <span>and dance all the time.</span>
+    </p>
+  </div>
+</section>

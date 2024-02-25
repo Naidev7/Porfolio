@@ -1,0 +1,24 @@
+---
+import {Projects} from "../assets/data";
+import ProjectCard from "../components/ProjectCard.astro"
+---
+
+<div class="scroll-mt-36 m-[75%] mx-auto mt-20 mb-10" id="projects" > 
+    <h2 class="font-bold w-fit md:mx-0 md:ml-5 sm:text-6xl xs:text-6xl xs:mx-auto">
+        Projects
+    </h2>
+</div>
+<div>
+    {
+        Projects.map((card)=>{
+            <ProjectCard 
+                title={card.title}
+                description={card.description}
+                image={card.image}
+            />
+        })
+    }
+</div>
+<div>
+
+</div>

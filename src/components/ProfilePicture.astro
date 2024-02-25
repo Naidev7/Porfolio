@@ -1,0 +1,19 @@
+---
+import { Image } from "astro:assets"
+import mich from "../assets/mich.jpg"
+---
+
+<article class="w-full h-[500px] overflow-hidden flex flex-col items-center justify-center relative md:px-20 xs:px-0">
+    <header class="text-center absolute top-0 z-10">
+        <span class="block font-bold sm:text-[55px] sm:leading-[63px] xxs:texxt-[36px] xs:text-[26px]">
+            Passionate young programmer
+        </span>
+        <span class="block font-bold sm:text-[55px] sm:leading-[63px] xxs:texxt-[36px] xs:text-[26px]">
+            Crafting digital dreams
+        </span>
+        <span class="block font-bold sm:text-[55px] sm:leading-[63px] xxs:texxt-[36px] xs:text-[26px]">
+            Creative code wizard.
+        </span>
+    </header>
+    <Image src={mich} alt="#" class="object-cover relative h-[900px] object-top lg:-bottom-[80px] flex justify-center xxs:texxt-[40%] xs:text-[29px]%] lg:w-[-800px] md:w-[-1000px] md:-bottom-[-30%] xs:w-[1500px] xs:-bottom-[10%]">
+</article>
