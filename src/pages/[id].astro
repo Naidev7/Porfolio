@@ -1,0 +1,32 @@
+---
+import Layout from "../layouts/Layout.astro";
+const { id } = Astro.params;
+import { projectsData } from "../assets/data";
+
+export function getStaticPaths () {
+    return [
+            {params: {id:'image-nakama' }},
+            {params: {id:'image-awesomeCards' }},
+            {params: {id: 'image-hangman' }},
+            {params: {id:'image-rockPaperScissors' }},
+    ]
+}
+
+const card = projectsData.find((card)=> card.image === id);
+console.log(card)
+
+---
+
+<Layout title={`Project | ${id}`}>
+<div class="relative flex items-center lg:h-screen xs:h-fit">
+    <div class="absolute min-h-screen -z-[-1] inset-0 bg-gradient-to-b from-context"
+    style=`--context-color: ${card.color}`
+    >
+
+        <img src={`${id}.jpg`} alt="#" class="transition-all duration-500 absolute -z-[-1] inset-0 mix-blend-overlay opacity-20 scale-90 w-full h-full object-cover blur-md">
+
+        <div class="absolute inset-0 bg-gradient-to-t via-transparent from-zinc-900"></div>
+
+    </div>
+</div>
+</Layout>

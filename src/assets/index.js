@@ -32,3 +32,23 @@ document.addEventListener("astro:page-load", () => {
   })
 
 });
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.textContent = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_zjs3es6';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.textContent = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.textContent = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});

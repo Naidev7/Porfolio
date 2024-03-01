@@ -19,11 +19,20 @@ import "../assets/style.css"
     <meta name="generator" content={Astro.generator} />
 	<link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="../assets/style.css">
+
+  <!-- email -->
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('MqtwfnlRxU8xUALf2')
+</script>
+
     <title>{title}</title>
     <ViewTransitions />
   </head>
   <body class="bg-black text-white">
     <slot />
-    <script src="../assets/index.js"></script>
   </body>
 </html>
