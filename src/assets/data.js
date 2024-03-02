@@ -70,19 +70,19 @@ export const projectsData = [
     title: "Nakama",
     description: "The project consists of creating a website that serves as a letter of introduction to our team of 5 people, which we have called Nakama. In terms of technologies, it has helped us to consolidate what we have been seeing in these weeks about layout: HTML, CSS, Flexbox, Media Queries, Github, Sass, Grid, etc. It has been an opportunity to start working as a team, get to know each other and apply the Agile philosophy",
     image :'image-nakama',
-    color: '#EE8AD0'
+    color: '#b3d39c'
   },
   {
     title: "Awesome Profile Cards",
     description: "This project focuses on creating professional business cards using HTML, CSS and JavaScript. The goal is to provide users with a simple and effective tool to design professional business cards directly in the browser.",
     image :'image-awesomeCards',
-    color: '#BDB76B'
+    color: '#428593'
   },
   {
     title: "Hangman Game",
     description: "The Hangman Game is a classic implementation of the famous word game. Use your JavaScript skills to guess the hidden word before the drawing of the hangman is completed.",
     image :'image-hangman',
-    color: '#9370DB'
+    color: '#bd83ac'
   },
   {
     title: "Rock, Paper, Scissors",

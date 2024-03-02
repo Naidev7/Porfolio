@@ -14,11 +14,11 @@ const { title, description, image } = Astro.props;
     backgroundImage: `url(/${image}.jpg)`,
   }}
 >
-  <div class="container absolute bottom-0 px-5 my-6">
+  <div class="container absolute bottom-0 px-5 my-6 ">
     <h3 class="text-4xl font-bold">{title}</h3>
 
     <p
-      class="paragraph text-white/60 row-span-1 md:text-base xxs:text-[20px] xs:text-[15px]"
+      class="paragraph text-white/60 row-span-1 md:text-base xxs:text-[20px] xs:text-[15px] "
     >
       {description.slice(0, 60)} ...
     </p>
