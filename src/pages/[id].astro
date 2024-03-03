@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 const { id } = Astro.params;
-import { projectsData } from "../assets/data";
+import { projectsData, buttons } from "../assets/data";
 
 export function getStaticPaths() {
   return [
@@ -17,9 +17,13 @@ console.log(card);
 ---
 
 <Layout title={`Project | ${id}`}>
-  <div class="relative flex items-center lg:h-screen xs:h-fit">
-    <!-- background -->
 
+  <div
+    class="relative flex items-center lg:h-screen xs:h-fit xs:w-fit"
+    transition:name={`image-${id}`}
+    transition:persist
+  >
+    <!-- background -->
     <div
       class="absolute min-h-screen inset-0 z-[-1] bg-gradient-to-b from-context"
       style=`--context-color: ${card.color}`
@@ -35,6 +39,7 @@ console.log(card);
       >
       </div>
     </div>
+
     <!-- main section -->
 
     <div class="flex justify-center items-center w-full h-[80%] xs:h-fit">
@@ -49,17 +54,45 @@ console.log(card);
 
         <div class="flex flex-col gap-y-3 relative lg:py-0 xs:py-7">
           <h1 class="text-[75px] leading-[70px] font-black">{card.title}</h1>
+
           <p class="text-white/70 sm:text-[14px] xs:text-[12px]">
             {card.description}
           </p>
+          <!-- buttons -->
+
+          <div
+            class="absolute flex gap-x-5 lg:bottom-4 xxs:right-16 xxs:flex-row xxs:-bottom-4 xs:flex-col xs:-bottom-16 xs:right-[calc(100vw-90%)]"
+          >
+            <a
+              href={`/#${id}`}
+              class="text-2xl opacity-60 hover:opacity-100 duration-300 ease-in"
+            >
+              <i class={`${buttons[0].back} lg:text-[17px] xs:text-[14px]`}>
+                Back</i
+              ></a
+            >
+
+            <a
+              target="_blank"
+              href={buttons[0].hrefgithub}
+              class="text-2xl opacity-60 hover:opacity-100 duration-300 ease-in"
+            >
+              <i class={`${buttons[0].github} lg:text-[17px] xs:text-[14px]`}>
+                Repository</i
+              ></a
+            >
+
+            <a
+              target="_blank"
+              href={`/#${id}`}
+              class="text-2xl opacity-60 hover:opacity-100 duration-300 ease-in"
+            >
+              <i class={`${buttons[0].demo} lg:text-[17px] xs:text-[14px]`}>
+                Live demo</i
+              ></a
+            >
+          </div>
         </div>
-
-        <!-- buttons -->
-
-        <div class="absolute flex gap-x-5 lg:bottom-4 xxs:right-16 xxs:flex-row">
-            <a href={`/#${id}`}></a>
-        </div>
-
       </div>
     </div>
   </div>

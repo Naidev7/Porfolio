@@ -91,3 +91,13 @@ export const projectsData = [
     color: '#008080'
   },
 ];
+
+export const buttons =  [
+  {
+    github:'bx bxl-github' ,
+    demo: 'bx bx-desktop',
+    back: 'bx bxs-left-arrow-circle',
+    hrefgithub: 'https://github.com/Naidev7',
+    hrefdemo: ''
+  }
+]

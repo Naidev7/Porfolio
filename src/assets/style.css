@@ -46,7 +46,10 @@
 .parent-container:hover .container {
   transform: translateY(0);
 }
-.parent-container:hover .container {
+.parent-container:hover .container .paragraph {
   opacity: 1;
   transition: opacity ease-in 300ms;
+}
+.bg-image{
+  background: linear-gradient(to bottom, hsla(0, 0%, 100%, 0.5), hsla(0, 0%, 0%));
 }
