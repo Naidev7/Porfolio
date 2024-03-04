@@ -3,6 +3,9 @@
 
 Welcome to my personal portfolio repository! This project serves as the culmination of my individual efforts during the Adalab bootcamp. It was designed to provide a space where I could showcase everything I've learned and demonstrate my projects.
 
+![porfolio](https://github.com/Naidev7/Porfolio/assets/150022253/7227c4a9-0e18-4776-810c-dec7e3609111)
+
+
 ## Technologies Used
 1. Astro: I've utilized Astro for this project, which I learned outside of the bootcamp through online resources.
 
