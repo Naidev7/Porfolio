@@ -99,6 +99,13 @@ export const projectsData = [
     color: '#dad7cd',
     url: 'https://project-promo-v-module-4-team-2.onrender.com/'
   },
+  {
+    title: "Beware of Grogu!",
+    description: "In this game, you'll join the Mandalorian bounty hunter Din Djarin, also known as the Mandalorian or simply Mando, as he travels through the galaxy with Grogu, completing various missions. This time, the mission is very special. Mando must deliver unfertilized frog eggs, blue cookies (so delicious!), and some frogs to establish contact with Ahsoka Tano..",
+    image :'image-grogu',
+    color: '#dad7cd',
+    url: 'https://project-promo-v-module-4-team-2.onrender.com/'
+  }
 ];
 
 export const buttons =  [
