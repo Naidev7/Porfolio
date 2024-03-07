@@ -57,7 +57,7 @@ export const technologies = [
   },
   {
     text: "MySQL",
-    logo: "bx bxl-data",
+    logo: "bx bx-data",
   },
   {
     text: "Github",
@@ -67,6 +67,14 @@ export const technologies = [
     text: "Visual Studio",
     logo: "bx bxl-visual-studio",
   },
+  {
+    text: "Docker",
+    logo: "bx bxl-docker",
+  },
+  {
+    text: "Less",
+    logo: "bx bxl-less",
+  }
 ];
 
 export const projectsData = [
@@ -75,7 +83,7 @@ export const projectsData = [
     description: "The project consists of creating a website that serves as a letter of introduction to our team of 5 people, which we have called Nakama. In terms of technologies, it has helped us to consolidate what we have been seeing in these weeks about layout: HTML, CSS, Flexbox, Media Queries, Github, Sass, Grid, etc. It has been an opportunity to start working as a team, get to know each other and apply the Agile philosophy",
     image :'image-nakama',
     color: '#b3d39c',
-    url: 'https://silviesc.github.io/project-promo-v-module-1-team-1/'
+    url: 'https://silviesc.github.io/project-promo-v-module-1-team-1/',
   },
   {
     title: "Awesome Profile Cards",
@@ -101,18 +109,3 @@ export const buttons =  [
     hrefgithub: 'https://github.com/Naidev7'
   }
 ]
-
-export const hrefdemo = [
-  {
-    id: 0,
-    url: 'https://silviesc.github.io/project-promo-v-module-1-team-1/'
-  },
-  {
-    id: 1,
-    url: 'https://naidev7.github.io/Awesome-profile-cards/'
-  },
-  {
-    id: 2,
-    url: 'https://project-promo-v-module-4-team-2.onrender.com/'
-  }
-] 

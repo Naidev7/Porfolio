@@ -12,19 +12,20 @@ export function getStaticPaths() {
 }
 
 const card = projectsData.find((card) => card.image === id);
+
 console.log(card);
+
 ---
 
 <Layout title={`Project | ${id}`}>
-
   <div
-    class="relative flex items-center lg:h-screen xs:h-fit xs:w-fit"
+    class="relative flex items-center lg:h-screen xs:h-fit"
     transition:name={`image-${id}`}
     transition:persist
   >
     <!-- background -->
     <div
-      class="absolute min-h-screen inset-0 z-[-1] bg-gradient-to-b from-context"
+      class="absolute min-h-screen  inset-0 z-[-1] bg-gradient-to-b from-context"
       style=`--context-color: ${card.color}`
     >
       <img
@@ -34,7 +35,7 @@ console.log(card);
       />
 
       <div
-        class="absolute inset-0 bg-gradient-to-t via-transparent from-zinc-900"
+        class="absolute sm:w-full sm:h-full inset-0 bg-gradient-to-t via-transparent from-zinc-900"
       >
       </div>
     </div>
@@ -83,7 +84,7 @@ console.log(card);
 
             <a
               target="_blank"
-              href={`/#${id}`}
+              href={`${card.url}`}
               class="text-2xl opacity-60 hover:opacity-100 duration-300 ease-in"
             >
               <i class={`${buttons[0].demo} lg:text-[17px] xs:text-[14px]`}>

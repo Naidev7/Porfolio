@@ -34,6 +34,8 @@ document.addEventListener("astro:page-load", () => {
 });
 const btn = document.getElementById('button');
 
+
+/* form */
 document.getElementById('form')
  .addEventListener('submit', function(event) {
    event.preventDefault();

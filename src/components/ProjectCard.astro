@@ -3,8 +3,9 @@ interface Props {
   title: string;
   description: string;
   image: string;
+  demo: string;
 }
-const { title, description, image } = Astro.props;
+const { title, description, image, demo } = Astro.props;
 ---
 
 <a
@@ -18,10 +19,10 @@ const { title, description, image } = Astro.props;
 >
   <div class="container absolute bottom-0 px-5 my-6 ">
 
-    <h3 class="text-5xl font-bold">{title}</h3>
+    <h3 class="text-5xl font-bold text-black/70">{title}</h3>
 
     <p
-      class="paragraph text-white/60 row-span-1 opacity-0 md:text-base xxs:text-[20px] xs:text-[15px] "
+      class="paragraph text-black/70 row-span-1 opacity-0 md:text-base xxs:text-[20px] xs:text-[15px] "
     >
       {description.slice(0, 60)} ...
     </p>

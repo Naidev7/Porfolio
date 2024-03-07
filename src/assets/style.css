@@ -18,6 +18,7 @@
     transform: translateX(-100%);
   }
 }
+
 /* modal */
 .tech-modal {
   background-image: linear-gradient(to bottom, #000, hsla(0, 0%, 0%, 0.9));

@@ -5,7 +5,7 @@ import ProjectCard from "../components/ProjectCard.astro";
 
 <div class="scroll-mt-36 w-[75%] mx-auto mt-20 mb-10" id="projects">
   <h2
-    class="font-bold w-fit md:mx-0 md:ml-5 sm:text-6xl xs:text-6xl xs:mx-auto"
+    class="font-bold w-fit md:mx-0 md:ml-5 sm:text-6xl xs:text-5xl xs:mx-auto"
   >
     Projects
   </h2>
@@ -20,7 +20,7 @@ import ProjectCard from "../components/ProjectCard.astro";
         title={card.title}
         description={card.description}
         image={card.image}
-        link={card.url}
+        demo={card.url}
       />
     ))
   }
