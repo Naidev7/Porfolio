@@ -10,7 +10,7 @@ export const social = [
   },
   {
     logo:"bx bx-download",
-    url: "https://drive.google.com/file/d/11nBRIW8Qqqt4nCSqiKvXsUj_T2EWXQgF/view?usp=sharing"
+    url: "https://drive.google.com/file/d/1Vf6uYs-yvvl_zzcODigrH6jATpALU6IL/view?usp=sharing"
   }
 ];
 export const info = [{ text: "About" }, { text: "Projects" }];
