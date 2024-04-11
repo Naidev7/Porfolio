@@ -10,7 +10,7 @@ export const social = [
   },
   {
     logo:"bx bx-download",
-    url: "https://drive.google.com/file/d/1Vf6uYs-yvvl_zzcODigrH6jATpALU6IL/view?usp=sharing"
+    url: "https://drive.google.com/file/d/1X94zDe-XSlwQmTbPk0wx7J-fqRDLZ3h9/view"
   }
 ];
 export const info = [{ text: "About" }, { text: "Projects" }];
@@ -105,6 +105,13 @@ export const projectsData = [
     image :'image-grogu',
     color: '#dad7cd',
     url: 'https://project-promo-v-module-4-team-2.onrender.com/'
+  },
+  {
+    title: "Teacher Dashboard",
+    description: "This project is a teacher dashboard developed as a full-stack application, which means it encompasses both frontend and backend development. It utilizes a set of modern technologies to provide an optimal experience for users and facilitate the development and maintenance of the project.",
+    image :'image-dashboard',
+    color: '#082f49',
+    url: 'https://teacher-dashboard-gamma.vercel.app'
   }
 ];
 
