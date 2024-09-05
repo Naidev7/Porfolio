@@ -30,12 +30,12 @@ data-tech-h1
 <div class="w-screen h-screen bg-black/70 fixed top-0 z-[100] justify-center items-center hidden cursor-pointer"
 data-tech-modal
 >
-    <div class="tech-modal w-4/5 h-[70%] overflow-y-auto flex flex-wrap justify-center items-center gap-x-5 gap-y-4 bg-pink-600"
+    <div class="tech-modal w-4/5 h-[70%] overflow-y-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-x-5 gap-y-4 bg-pink-600"
     data-tech-stop
     >
         {
             technologies.map((tech)=>(
-                <div class="inline-block m-0">
+                <div class="inline-block m-0 p-9">
                     <TechnologyCard
                     text={tech.text}
                     logo={tech.logo}

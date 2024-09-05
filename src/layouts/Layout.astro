@@ -7,6 +7,7 @@ const { title } = Astro.props;
 import { ViewTransitions } from "astro:transitions";
 import favIcon from "../assets/1.png";
 import "../assets/style.css";
+import {Toaster, toast } from "sonner";
 ---
 
 <!doctype html>
@@ -25,6 +26,14 @@ import "../assets/style.css";
     <meta property="og:url" content="https://naidalyruiz.netlify.app/" />
 
     <link rel="icon" type="image/png" href={favIcon.src} class="rounded-md" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <meta name="generator" content={Astro.generator} />
     <link
       rel="stylesheet"
@@ -47,6 +56,8 @@ import "../assets/style.css";
   </head>
   <body class="bg-black text-white h-screen w-screen">
     <slot />
+
+    <Toaster client:load/>
     <script src="../assets/index.js"></script>
   </body>
 </html>

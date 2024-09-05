@@ -1,3 +1,5 @@
+import { toast } from "sonner";
+
 document.addEventListener("astro:page-load", () => {
   //slider
   const wrapper = document.querySelector("[data-tech-wrapper]");
@@ -13,44 +15,64 @@ document.addEventListener("astro:page-load", () => {
     modal.classList.toggle("hidden");
     modal.classList.add("flex");
   });
-  wrapper.addEventListener('click', ()=>{
+  wrapper.addEventListener("click", () => {
     modal.classList.toggle("hidden");
     modal.classList.add("flex");
   });
-  modal.addEventListener('click', ()=>{
+  modal.addEventListener("click", () => {
     modal.classList.remove("flex");
     modal.classList.add("hidden");
-  })
+  });
 
-  stop.addEventListener('click', (e)=> e.stopPropagation());
+  stop.addEventListener("click", (e) => e.stopPropagation());
 
-  addEventListener('keydown', (e)=>{
-    if(e.key === 'Escape'){
-        modal.classList.remove('flex');
-        modal.classList.add('hidden');
+  addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      modal.classList.remove("flex");
+      modal.classList.add("hidden");
     }
-  })
-
+  });
 });
-const btn = document.getElementById('button');
+const btn = document.getElementById("button");
 
+const inputName = document.getElementById("from_name");
+const inputMessage = document.getElementById("message");
 
 /* form */
-document.getElementById('form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
+const form = document.getElementById("form");
 
-   btn.textContent = 'Sending...';
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
 
-   const serviceID = 'default_service';
-   const templateID = 'template_zjs3es6';
+  btn.textContent = "Sending...";
 
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.textContent = 'Send Email';
-      alert('Sent!');
-    }, (err) => {
-      btn.textContent = 'Send Email';
+  const serviceID = "service_5vuzk1o";
+  const templateID = "template_rq3mfoa";
+
+  emailjs.sendForm(serviceID, templateID, this).then(
+    () => {
+      inputName.value = "";
+      inputMessage.value = "";
+
+      btn.textContent = "Send Email";
+      //alert("Sent!");
+
+      return toast.success(
+        "Thanks you to contact me, I will review your message.",
+        {
+          className: "toast-success",
+          duration: 6000,
+        }
+      );
+    },
+    (err) => {
+      btn.textContent = "Send Email";
       alert(JSON.stringify(err));
-    });
+
+      return toast.error("It had been an error, please, try again", {
+        className: 'toast-error',
+        duration: 6000
+      });
+    }
+  );
 });
