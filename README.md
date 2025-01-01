@@ -11,8 +11,7 @@ Welcome to my personal portfolio repository! This project serves as the culminat
 
 2. TypeScript: TypeScript has been instrumental in handling the logic of my portfolio.
 
-3. Tailwind CSS: Tailwind CSS was used for styling alongside CSS. Both TypeScript and Tailwind have been significant personal discoveries for me, as the little I've learned about them through self-study has been incredibly rewarding.
-
+3. Tailwind CSS: Tailwind CSS was used for styling alongside CSS. Both TypeScript and Tailwind have been significant personal discoveries for me, as the little I've learned about them through self-study has been incredibly rewarding..
 
 
 
